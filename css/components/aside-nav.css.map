@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "aside-nav.css",
+	"sources": [
+		"../../sass/components/aside-nav.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

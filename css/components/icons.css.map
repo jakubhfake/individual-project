@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "icons.css",
+	"sources": [
+		"../../sass/components/icons.scss",
+		"../../sass/_variables.scss"
+	],
+	"names": [],
+	"mappings": "ACAA,OAAO,CAAC,sEAAI;AAEZ,YAAY;AAeZ,gBAAgB;AAEhB,WAAW;ADjBX,AAAA,KAAK,CAAC;EACJ,IAAI,ECKQ,OAAO;EDJnB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;EACjB,MAAM,EAAE,WAAW,CAAC,SAAS,CAAC,YAAY,CAAC,iBAAiB,CAAC,eAAe,CAAC,aAAa;CAC3F"
+}

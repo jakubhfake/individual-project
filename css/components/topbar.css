@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap");
+/* Colors */
+/* Font sizes */
+/* Fonts */
+.topbar {
+  background-color: #f5f5f2;
+}
+
+.topbar ul {
+  display: flex;
+  list-style: none;
+  float: right;
+}
+
+.topbar li {
+  font-size: 30px;
+  vertical-align: text-bottom;
+}
+
+.topbar a {
+  display: inline-block;
+  width: 30px;
+}
+
+/*# sourceMappingURL=topbar.css.map */

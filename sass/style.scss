@@ -1,7 +1,14 @@
+@import "normalize";
 @import "variables";
 @import "mixins";
-@import "normalize";
+@import "../vendor/bootstrap-grid.css";
+@import "../vendor/icons/css/Glyphter.css";
 @import "layout";
+@import "./components/icons";
+@import "./components/buttons";
+@import "./components/avatar";
+@import "./components/topbar";
+
 /* Components */
 //@import "components/form_field";
 /* Sections */

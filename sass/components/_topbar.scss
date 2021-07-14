@@ -1,0 +1,57 @@
+.topbar {
+  background-color: $color-white;
+  padding: 0;
+  border-bottom: 1px solid;
+  border-color: $color-font1;
+  div {
+    position: relative;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    float: right;
+    margin: 0;
+    height: 100%;
+    
+  }
+  li {
+    font-size: 20px;
+    padding: 20px 0;
+    border-left: 1px solid;
+    border-color: $color-font1;
+    
+    //margin-left: 20px;
+    
+    a {
+      vertical-align: top;
+    }
+    span {
+      margin: 0 10px 0 10px;
+      vertical-align: middle;
+    }
+    img {
+          margin-top: 2px;
+    }
+    .amount {
+      font-size: 20px;
+      color: $color-font1;
+    }
+    .login-person {
+      color: $color12;
+      font-size: 10px;
+    }
+ }
+ .notification {
+  position: absolute;
+    top: -2px;
+    left: 26px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .active{
+    background-color:$color-nav-active1;
+  }
+
+}

@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+/* Colors */
+/* Font sizes */
+/* Fonts */
+.icon {
+  fill: #f5f5f2;
+  width: 33px;
+  height: 33px;
+  margin-right: 10px;
+  margin-left: 30px;
+  filter: invert(70%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+}
+
+/*# sourceMappingURL=icons.css.map */

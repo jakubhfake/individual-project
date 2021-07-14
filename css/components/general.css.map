@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "general.css",
+	"sources": [
+		"../../sass/components/general.scss"
+	],
+	"names": [],
+	"mappings": ""
+}
