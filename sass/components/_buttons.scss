@@ -1,8 +1,14 @@
-button {
+.btn-addnew {
+  justify-content: center;
+  display: flex;
+
+  button {
     background-color: $color5;
     border: none;
     border-radius: 5px;
     margin: 4px;
-    padding: 10px 15px;
+    padding: 8px 15px;
     color: $color-white;
+    cursor: pointer;
+  }
 }

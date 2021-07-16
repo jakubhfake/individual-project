@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <title>Just do it</title>
 </head>
 <body>
-    <nav class="navigation">
+    <header>
         <div class="container">
             <div class="row">
-                <div class="col-2 navbar-brand">
+                <div class="col-2 topmenu">
                    <strong><a href="#" class="logo">Just do it</a></strong>
                     <a class="hamburger"><i class="fas fa-bars"></i></a>
                 </div>
@@ -32,11 +31,11 @@
                 </div>
             </div>
         </div>
-    </nav>
-    <section class="container">
+    </header>
+    <main class="container">
         <div class="row">
             <div class="aside col-2">
-                <div class="aside-nav">
+                <nav class="aside-nav">
                     <ul>
                         <li  class="nav-link-active"><a href="#"><img src="vendor/icons/general.svg" class="icon-nav" alt="">General</a></li>
                         <li><a href="#"><img src="vendor/icons/details.svg" class="icon-nav" alt="">Details</a></li>
@@ -55,84 +54,160 @@
                        </div>
                     </div>
                 
-                </div>
+                </nav>
             </div>
-            <div class=" articles col-10">
-                <div class="general">
-                    <div class="article-title">
+            <div class="main-page-content col-10">
+                <div class="container-wrapper">
+                    <div class="mine-title">
                         <h1>GENERAL STATISTIC</h1>
                     </div>
-                    <div>
-                    </div>
-                    
-                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id. Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
-                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-                </div>
-                <div class="links">
-                    <div class="article-title">
+                     <div class="container-wrapper">
+                        <div class="content-wrapper">
+                            <form class="date-form">
+                                <div class="date-picker">
+                                    <input type="datetime" name="date" class="date-start">
+                                    <input type="date" name="date" class="date-end">
+                                </div>
+                                <button id="btn-refresh" class="btn btn-refresh"><i class="icon-refresh icon"></i></button>
+                            </form>
+                            <div class="chart-stats">
+                                <div class="column col-1">
+                                  <div class="row row-1">
+                                    <a class="row-text">Visit Signups</a>
+                                    <a class="value">221</a>
+                                  </div>
+                                  <div class="row row-2">
+                                    <a class="row-text">FTD</a>
+                                    <a class="value">445</a>
+                                  </div>
+                                  <div class="row row-chart-title row-chart-title-max">
+                                    <a class="row-text earning-max">Earning chart</a>
+                                  </div>
+                                </div>
+                                <div class="column col-2">
+                                  <div class="row row-1">
+                                    <a class="row-text">Net deposit</a>
+                                    <a class="value">564</a>
+                                  </div>
+                                  <div class="row row-2">
+                                    <a class="row-text">Turn over</a>
+                                    <a class="value">432</a>
+                                  </div>
+                                  <div class="row row-chart-title ">
+                                    <a class="row-text earning-min ">Earning chart</a>
+                                  </div>
+                                </div>
+          
+                              </div>
+                  
+            
+                          <div class="container-wrapper container-chart">
+                              <div class="container-content-wrapper">
+                                  <div class="chart">
+                                      <canvas id="myChart"></canvas>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      </div>    
+                        </div>
+                <div class="container-wrapper">
+                    <div class="mine-title">
                         <h1>LINKS</h1>
                     </div>
-                    <div class="links items">
+                    <div class="btn-addnew">
                         <button>+ add new</button>
-                    <ul>
-                      <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-                      <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-                      <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-                    </ul>
-                    <button>+ add new</button>
                     </div>
-                    <ol>
-                      <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-                      <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-                      <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-                    </ol>
-                    <h1>Links</h1>
-                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id. Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
-                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-                    <ul>
-                      <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-                      <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-                      <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-                    </ul>
-                    <ol>
-                      <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-                      <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-                      <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-                    </ol>
-                    <h1>Links</h1>
-                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id. Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
-                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-                    <ul>
-                      <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-                      <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-                      <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-                    </ul>
-                    <ol>
-                      <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-                      <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-                      <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-                    </ol>
+                    <div class='content-wrapper'>
+                        <ul class="links-list">
+                            <li class="link">
+                              <p class="link-name">Home page</p>
+                              <a href='#'>https://www.homepage.com</a>
+                              <div>
+                                <img src="vendor/icons/links.svg" class="icon-link" alt="">
+                                <img src="vendor/icons/trash.svg" class="icon-link" alt="">
+                              </div>
+                            </li>
+                            <li class="link">
+                                <p class="link-name">Currently offer</p>
+                                <a href='#'>https://www.currently.com</a>
+                                <div>
+                                  <img src="vendor/icons/links.svg" class="icon-link" alt="">
+                                  <img src="vendor/icons/trash.svg" class="icon-link" alt="">
+                                </div>
+                              </li>
+                              <li class="link active">
+                                <p class="link-name">Blurpix</p>
+                                <a href='#'>https://www.blurpix.com</a>
+                                <div>
+                                  <img src="vendor/icons/links.svg" class="icon-link" alt="">
+                                  <img src="vendor/icons/trash.svg" class="icon-link" alt="">
+                                </div>
+                              </li>
+                              <li class="link">
+                                <p class="link-name">Your Site</p>
+                                <a href='#'>https://www.yoursite.com</a>
+                                <div>
+                                  <img src="vendor/icons/links.svg" class="icon-link" alt="">
+                                  <img src="vendor/icons/trash.svg" class="icon-link" alt="">
+                                </div>
+                              </li>
+                              <li class="link">
+                                <p class="link-name">Google</p>
+                                <a href='#'>https://www.google.com</a>
+                                <div>
+                                  <img src="vendor/icons/links.svg" class="icon-link" alt="">
+                                  <img src="vendor/icons/trash.svg" class="icon-link" alt="">
+                                </div>
+                              </li>
+                              <li class="link">
+                                <p class="link-name">Facebook</p>
+                                <a href='#'>https://www.facebook.com</a>
+                                <div>
+                                  <img src="vendor/icons/links.svg" class="icon-link" alt="">
+                                  <img src="vendor/icons/trash.svg" class="icon-link" alt="">
+                                </div>
+                              </li>
+                              <li class="link">
+                                <p class="link-name">Dashboard</p>
+                                <a href='#'>https://www.dashboard.com</a>
+                                <div>
+                                  <img src="vendor/icons/links.svg" class="icon-link" alt="">
+                                  <img src="vendor/icons/trash.svg" class="icon-link" alt="">
+                                </div>
+                              </li>
+                              <li class="link">
+                                <p class="link-name">Blurax</p>
+                                <a href='#'>https://www.blurax.com</a>
+                                <div>
+                                  <img src="vendor/icons/links.svg" class="icon-link" alt="">
+                                  <img src="vendor/icons/trash.svg" class="icon-link" alt="">
+                                </div>
+                              </li>
+                              <li class="link">
+                                <p class="link-name">Price of Wine</p>
+                                <a href='#'>https://www.priceofwine.com</a>
+                                <div>
+                                  <img src="vendor/icons/links.svg" class="icon-link" alt="">
+                                  <img src="vendor/icons/trash.svg" class="icon-link" alt="">
+                                </div>
+                              </li>
+                              <li class="link">
+                                <p class="link-name">Twitter</p>
+                                <a href='#'>https://www.twitter.com</a>
+                                <div>
+                                  <img src="vendor/icons/links.svg" class="icon-link" alt="">
+                                  <img src="vendor/icons/trash.svg" class="icon-link" alt="">
+                                </div>
+                              </li>
+                        </ul>
+                    </div>
+                    <div class="btn-addnew">
+                        <button>+ add new</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 </body>
 </html>

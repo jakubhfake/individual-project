@@ -1,0 +1,46 @@
+.links-list {
+  list-style: none;
+  //display: inline;
+  width: 70%;
+  li {
+    border-bottom: 1px solid $color-background;
+    vertical-align: middle;
+    padding-top: 15px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:first-child {
+      border-top: 1px solid $color-background;
+    }
+    p {
+      padding-left: 10px;
+      color: $color-font1;
+      font-weight: 500;
+    }
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+    img {
+      height: 15px;
+      width: 15px;
+      margin: 0 10px;
+      cursor: pointer;
+      opacity: 0;
+
+      &:hover {
+        filter: invert(70%) sepia(71%) saturate(4103%) hue-rotate(348deg)
+          brightness(100%) contrast(93%);
+      }
+    }
+  }
+  .active {
+      background-color: $color-background;
+      img {
+        opacity: 1;
+      
+    }
+  }
+}
