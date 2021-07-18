@@ -44,7 +44,7 @@ header {
   position: absolute;
   right: 10px;
   i {
-    color: $color-font1;
+    color: $color-main-grey;
     font-size: 22px;
     align-items: end;
     padding-left: 5px;
@@ -69,7 +69,7 @@ header {
   height: 100%;
   min-width: 17%;
   width: auto;
-  color: $color-font1;
+  color: $color-main-grey;
   list-style: none;
 }
 
@@ -82,9 +82,7 @@ header {
     padding-bottom: 10px;
   }
   a {
-    color: $color-font1;
-    text-decoration: none;
-    font-size: 15px;
+    color: $color-main-grey;
   }
   img {
     vertical-align: text-bottom;
@@ -112,13 +110,22 @@ header {
 .container-wrapper {
   margin-top: 20px;
   background-color: $color-white;
-  padding: 5px;
-  box-shadow: 0px 1px 6px $color-font1;
+  box-shadow: 0px 1px 6px $color-main-grey;
 }
 
 .content-wrapper {
-  margin: 20px auto;
+  margin: 20px 0;
   justify-content: center;
   display: flex;
   align-items: center;
+}
+
+.mine-title {
+  border-bottom: 1px solid $color-background;
+  width: 100%;
+  padding: 15px;
+  h1 {
+    margin: 0;
+    color: $color-main-grey;
+  }
 }

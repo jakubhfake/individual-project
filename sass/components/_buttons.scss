@@ -1,14 +1,22 @@
+.btn {
+  background-color: $color5;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 4px;
+  padding: 8px 15px;
+  color: $color-white;
+  cursor: pointer;
+}
+
 .btn-addnew {
+  margin: 20px 0;
   justify-content: center;
   display: flex;
+}
 
-  button {
-    background-color: $color5;
-    border: none;
-    border-radius: 5px;
-    margin: 4px;
-    padding: 8px 15px;
-    color: $color-white;
-    cursor: pointer;
-  }
+.btn-refresh {
+  margin-left: 15px;
+  padding: 10px 10px;
+  font-size: 0;
 }

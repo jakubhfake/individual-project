@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "table-row.css",
+	"sources": [
+		"../../sass/components/table-row.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

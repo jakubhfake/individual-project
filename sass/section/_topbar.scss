@@ -2,7 +2,7 @@
   background-color: $color-white;
   padding: 0;
   border-bottom: 1px solid;
-  border-color: $color-font1;
+  border-color: $color-main-grey;
   div {
     position: relative;
   }
@@ -18,9 +18,7 @@
     font-size: 20px;
     padding: 20px 0;
     border-left: 1px solid;
-    border-color: $color-font1;
-    
-    //margin-left: 20px;
+    border-color: $color-main-grey;
     
     a {
       vertical-align: top;
@@ -34,10 +32,10 @@
     }
     .amount {
       font-size: 20px;
-      color: $color-font1;
+      color: $color-main-grey;
     }
     .login-person {
-      color: $color12;
+      color: $color-link;
       font-size: 15px;
     }
  }

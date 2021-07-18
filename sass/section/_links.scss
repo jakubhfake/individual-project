@@ -1,10 +1,10 @@
 .links-list {
   list-style: none;
-  //display: inline;
+  display: inline;
   width: 70%;
   li {
     border-bottom: 1px solid $color-background;
-    vertical-align: middle;
+    //vertical-align: middle;
     padding-top: 15px;
     padding: 0 20px;
     display: flex;
@@ -16,7 +16,7 @@
     }
     p {
       padding-left: 10px;
-      color: $color-font1;
+      color: $color-main-grey;
       font-weight: 500;
     }
     a {
@@ -37,10 +37,47 @@
     }
   }
   .active {
-      background-color: $color-background;
-      img {
-        opacity: 1;
-      
+    background-color: $color-background;
+    img {
+      opacity: 1;
     }
+  }
+}
+
+.links-wrapper {
+  width: 70%;
+  border-spacing: 0px;
+  text-align: left;
+  table-layout: fixed;
+}
+
+td {
+  border-bottom: 1px solid $color-background;
+  border-top: 1px solid $color-background;
+  padding: 0px;
+  a {
+    color: $color-link;
+    pointer-events: none;
+    cursor: default;
+    
+  }
+  img {
+    justify-content: end;
+    margin-right: 20px;
+    opacity: 0;
+  }
+}
+.table-img {
+  text-align: right;
+  
+}
+tr:hover {
+  background-color: $color-background;
+  a {
+    cursor: pointer;
+    pointer-events: auto;
+  }
+  img {
+    opacity: 1;
   }
 }

@@ -61,54 +61,44 @@
                     <div class="mine-title">
                         <h1>GENERAL STATISTIC</h1>
                     </div>
-                     <div class="container-wrapper">
-                        <div class="content-wrapper">
-                            <form class="date-form">
-                                <div class="date-picker">
-                                    <input type="datetime" name="date" class="date-start">
-                                    <input type="date" name="date" class="date-end">
-                                </div>
-                                <button id="btn-refresh" class="btn btn-refresh"><i class="icon-refresh icon"></i></button>
-                            </form>
-                            <div class="chart-stats">
-                                <div class="column col-1">
-                                  <div class="row row-1">
-                                    <a class="row-text">Visit Signups</a>
-                                    <a class="value">221</a>
-                                  </div>
-                                  <div class="row row-2">
-                                    <a class="row-text">FTD</a>
-                                    <a class="value">445</a>
-                                  </div>
-                                  <div class="row row-chart-title row-chart-title-max">
-                                    <a class="row-text earning-max">Earning chart</a>
-                                  </div>
-                                </div>
-                                <div class="column col-2">
-                                  <div class="row row-1">
-                                    <a class="row-text">Net deposit</a>
-                                    <a class="value">564</a>
-                                  </div>
-                                  <div class="row row-2">
-                                    <a class="row-text">Turn over</a>
-                                    <a class="value">432</a>
-                                  </div>
-                                  <div class="row row-chart-title ">
-                                    <a class="row-text earning-min ">Earning chart</a>
-                                  </div>
-                                </div>
-          
-                              </div>
-                  
-            
-                          <div class="container-wrapper container-chart">
-                              <div class="container-content-wrapper">
-                                  <div class="chart">
-                                      <canvas id="myChart"></canvas>
-                                  </div>
-                              </div>
-                          </div>
+                    <div class="calendar-wrapper">
+                        <form class="form" action="">
+                          <input class="form-wrapper" type="date">
+                          <input class="form-wrapper calendar" type="date">
+                        </form>
+                        <a href="#" class="btn btn-refresh"><img src="vendor/icons/refresh.svg" class="icon-refresh" alt=""></a>
                       </div>
+                      <div class="table-wrapper">
+                        <div class="table-row-wrapper">
+                          <div class="column">
+                            <div class="table-row">
+                              <p>Visit Signups</p>
+                              <p class="number">124</p>
+                            </div>
+                            <div class="table-row">
+                              <p>FTD</p>
+                              <p class="number">445</p>
+                            </div>
+                          </div>
+                          <div class="column">
+                            <div class="table-row">
+                              <p>Net Deposit</p>
+                              <p class="number">564</p>
+                            </div>
+                            <div class="table-row">
+                              <p>Turn Over</p>
+                              <p class="number">432</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chart-wrapper">
+                        <div class="chart-title">
+                          <h5>Earnings chart</h5>
+                        </div>
+                        <div class="chart" style="position: relative;">
+                          <canvas id="myChart" width="800" height="350"></canvas>
+                        </div>
                       </div>    
                         </div>
                 <div class="container-wrapper">
@@ -116,10 +106,92 @@
                         <h1>LINKS</h1>
                     </div>
                     <div class="btn-addnew">
-                        <button>+ add new</button>
+                        <button  class="btn">+ add new</button>
                     </div>
                     <div class='content-wrapper'>
-                        <ul class="links-list">
+                        <table class="links-wrapper">
+                            <tr>
+                                <td><p class="link-name">Home page</p></td>
+                                <td><a href='#'>https://www.homepage.com</a></td>
+                                <td  class="table-img">
+                                    <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
+                                    <a><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><p class="link-name">Currently offer</p></td>
+                                <td><a href='#'>https://www.currently.com</a></td>
+                                <td  class="table-img">
+                                  <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
+                                  <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><p class="link-name">Blurpix</p></td>
+                                <td><a href='#'>https://www.blurpix.com</a></td>
+                                <td  class="table-img">
+                                  <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
+                                  <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td><p class="link-name">Your Site</p></td>
+                              <td><a href='#'>https://wwwjj.yoursite.com</a></td>
+                              <td  class="table-img">
+                                <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
+                                <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                              </td>
+                          </tr>
+                          <tr>
+                            <td><p class="link-name">Google</p></td>
+                            <td><a href='#'>https://www.google.com</a></td>
+                            <td  class="table-img">
+                              <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
+                              <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><p class="link-name">Facebook</p></td>
+                            <td><a href='#'>https://www.facebook.com</a></td>
+                            <td  class="table-img">
+                              <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
+                              <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><p class="link-name">Dashboard</p></td>
+                            <td><a href='#'>https://www.dashboard.com</a></td>
+                            <td  class="table-img">
+                              <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
+                              <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><p class="link-name">Blurax</p></td>
+                            <td><a href='#'>https://www.blurax.com</a></td>
+                            <td  class="table-img">
+                              <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
+                              <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td><p class="link-name">Piece of Wine</p></td>
+                          <td><a href='#'>https://www.pieceofwine.com</a></td>
+                          <td  class="table-img">
+                            <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
+                            <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                          </td>
+                        </tr>
+                        <tr>
+                        <td><p class="link-name">Twitter</p></td>
+                        <td><a href='#'>https://www.twitter.com</a></td>
+                        <td  class="table-img">
+                          <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
+                          <a><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                        </td>
+                        </tr>
+                        </table>
+                        <!--<ul class="links-list">
                             <li class="link">
                               <p class="link-name">Home page</p>
                               <a href='#'>https://www.homepage.com</a>
@@ -129,7 +201,7 @@
                               </div>
                             </li>
                             <li class="link">
-                                <p class="link-name">Currently offer</p>
+                                <p class="link-name">Currently offerooooo</p>
                                 <a href='#'>https://www.currently.com</a>
                                 <div>
                                   <img src="vendor/icons/links.svg" class="icon-link" alt="">
@@ -200,10 +272,10 @@
                                   <img src="vendor/icons/trash.svg" class="icon-link" alt="">
                                 </div>
                               </li>
-                        </ul>
+                        </ul>-->
                     </div>
                     <div class="btn-addnew">
-                        <button>+ add new</button>
+                        <button  class="btn">+ add new</button>
                     </div>
                 </div>
             </div>
