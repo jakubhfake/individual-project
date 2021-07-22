@@ -1,14 +1,16 @@
 .contact {
+  position: relative;
   display: inline-block;
-  width: 100%;
+  width: auto;
   border-width: 1px;
-  border-color: $color-white;
+  border-color: $color-main-grey;
   border-top-style: solid;
   margin-top: 20px;
   padding-left: 25px;
 
   .manager {
     position: relative;
+    width: 100%;
   }
 
   .avatar {
@@ -36,14 +38,49 @@
     background-color: white;
     border-radius: 50%;
   }
+}
 
-  .manager span {
+.manager-name {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(0, -50%);
+  top: 20%;
+  left: 4rem;
+  margin-left: 10px;
+  color: $color-link;
+}
+@media (max-width: 768px){
+  .contact {
+    margin-top: 0;
+    padding-left: 10px;
+  
+  .manager-name {
+    position: relative;
+    display: block;
+    font-size: 12px;
+  }
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .online {
+    
+    left: 1.4rem;
+    width: 7px;
+    height: 7px;
+  }
+
+  .offline {
     position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(0, -50%);
-    top: 50%;
-    left: 4rem;
-    margin-left: 10px;
-    color: $color-link;
+    top: 50px;
+    right: 80px;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
   }
 }
+  }

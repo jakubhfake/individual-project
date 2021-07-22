@@ -3,7 +3,8 @@
   height: 20px;
   margin-right: 25px;
   margin-left: 15px;
-  filter: invert(70%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+  filter: invert(70%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%)
+    contrast(82%);
 }
 
 .icon-topbar {
@@ -11,7 +12,8 @@
   height: 20px;
   margin-right: 15px;
   margin-left: 15px;
-  filter: invert(70%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+  filter: invert(70%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%)
+    contrast(82%);
 }
 
 .small {
@@ -22,11 +24,22 @@
 .icon-link {
   width: 20px;
   height: 20px;
-  filter: invert(70%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+  filter: invert(70%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%)
+    contrast(82%);
 }
 
 .icon-refresh {
   height: 16px;
   width: 16px;
-  filter: invert(85%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(300%) contrast(100%);
+  filter: invert(85%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(300%)
+    contrast(100%);
+}
+
+@media (max-width: 768px) {
+  .icon-topbar {
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+    margin-left: 2px;
+  }
 }

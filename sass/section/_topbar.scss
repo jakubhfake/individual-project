@@ -1,8 +1,8 @@
 .topbar {
   background-color: $color-white;
   padding: 0;
-  border-bottom: 1px solid;
-  border-color: $color-main-grey;
+  border-bottom: 1px solid $color-main-grey;
+  
   div {
     position: relative;
   }
@@ -31,12 +31,13 @@
           margin-top: 2px;
     }
     .amount {
-      font-size: 20px;
+      font-size: 18px;
+      font-weight: 500;
       color: $color-main-grey;
     }
     .login-person {
       color: $color-link;
-      font-size: 15px;
+      font-size: 12px;
     }
  }
  .notification {
@@ -53,3 +54,9 @@
   }
 
 }
+
+@media (max-width: 768px){
+  .mobile-hidden {
+    display:none;
+  }
+  }

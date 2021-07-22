@@ -11,12 +11,12 @@
 <body>
     <header>
         <div class="container">
-            <div class="row">
-                <div class="col-2 topmenu">
+            <div class="row ">
+                <div class="col-md-12 col-lg-2 topmenu">
                    <strong><a href="#" class="logo">Just do it</a></strong>
                     <a class="hamburger"><i class="fas fa-bars"></i></a>
                 </div>
-                <div class="ml-auto col-10 topbar">
+                <div class="col-10 topbar mobile-hidden">
                     <ul>
                     <li><a href="#"><img src="vendor/icons/wallet.svg" class="icon-topbar" alt=""></a><span class="amount">$1,500.00</span><a href="#"><img src="vendor\icons\arrow-down-small.svg" class="icon-nav small" alt=""></a></li>
                     <li>
@@ -36,7 +36,7 @@
         <div class="row">
             <div class="aside col-2">
                 <nav class="aside-nav">
-                    <ul>
+                    <ul class="menu">
                         <li  class="nav-link-active"><a href="#"><img src="vendor/icons/general.svg" class="icon-nav" alt="">General</a></li>
                         <li><a href="#"><img src="vendor/icons/details.svg" class="icon-nav" alt="">Details</a></li>
                         <li><a href="#"><img src="vendor/icons/links.svg" class="icon-nav" alt="">Links</a></li>
@@ -50,14 +50,26 @@
                         <div class="manager">
                             <img class="avatar" src="./images/Jakub_H.jfif" alt="Avatar">
                             <i class="online"></i >
-                            <span class="manager-name">Jakub H.</span>
+                            <p class="manager-name">Jakub H.</p>
                        </div>
                     </div>
-                
+                    <div class="mobile-topmenu">
+                      <ul>
+                        <li><a href="#"><img src="vendor/icons/profile.svg" class="icon-topbar" alt="profile-icon"></a><span class="login-person">Jakub Haliniak</span></li>                      <li><a href="#"><img src="vendor/icons/wallet.svg" class="icon-topbar" alt=""></a><span class="amount">$1,500.00</span><a href="#"><img src="vendor\icons\arrow-down-small.svg" class="icon-nav small" alt=""></a></li>
+                        <li>
+                          <div>
+                              <a href="#"><img src="vendor/icons/notification.svg" class="icon-topbar" alt=""></a>
+                              <i class="notification active"></i>
+                          </div>
+                        </li>
+                        <li><a href="#"><img src="vendor/icons/quit.svg" class="icon-topbar" alt=""></a></li>
+                      </ul>
+                    </div> 
                 </nav>
+                
             </div>
             <div class="main-page-content col-10">
-                <div class="container-wrapper">
+              <div class="container-wrapper">
                   <div class="mine-title">
                       <h1>GENERAL STATISTIC</h1>
                   </div>
@@ -97,107 +109,111 @@
                       <h5>Earnings chart</h5>
                     </div>
                     <div class="chart" style="position: relative;">
-                      <canvas id="myChart" width="800" height="350"></canvas>
+                      <canvas id="myChart" width="700" height="350"></canvas>
                     </div>
                   </div>
+              </div>
+              <div class="container-wrapper">
+                <div class="mine-title">
+                    <h1>LINKS</h1>
                 </div>
-                <div class="container-wrapper">
-                    <div class="mine-title">
-                        <h1>LINKS</h1>
-                    </div>
-                    <div class="btn-addnew">
-                        <button  class="btn">+ add new</button>
-                    </div>
-                    <div class='content-wrapper'>
-                        <table class="links-wrapper">
-                            <tr>
-                                <td><p class="link-name">Home page</p></td>
-                                <td><a href='#'>https://www.homepage.com</a></td>
-                                <td  class="table-img">
-                                    <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
-                                    <a><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><p class="link-name">Currently offer</p></td>
-                                <td><a href='#'>https://www.currently.com</a></td>
-                                <td  class="table-img">
-                                  <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
-                                  <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><p class="link-name">Blurpix</p></td>
-                                <td><a href='#'>https://www.blurpix.com</a></td>
-                                <td  class="table-img">
-                                  <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
-                                  <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
-                                </td>
-                            </tr>
-                            <tr>
-                              <td><p class="link-name">Your Site</p></td>
-                              <td><a href='#'>https://wwwjj.yoursite.com</a></td>
-                              <td  class="table-img">
+                <div class="btn-addnew">
+                    <button  class="btn">+ add new</button>
+                </div>
+                <div class='content-wrapper'>
+                    <table class="links-wrapper">
+                        <tr>
+                            <td><p class="link-name">Home page</p></td>
+                            <td><a href='#'>https://www.homepage.com</a></td>
+                            <td  class="table-img">
                                 <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
-                                <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
-                              </td>
-                          </tr>
-                          <tr>
-                            <td><p class="link-name">Google</p></td>
-                            <td><a href='#'>https://www.google.com</a></td>
-                            <td  class="table-img">
-                              <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
-                              <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                                <a><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
                             </td>
-                          </tr>
-                          <tr>
-                            <td><p class="link-name">Facebook</p></td>
-                            <td><a href='#'>https://www.facebook.com</a></td>
-                            <td  class="table-img">
-                              <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
-                              <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><p class="link-name">Dashboard</p></td>
-                            <td><a href='#'>https://www.dashboard.com</a></td>
-                            <td  class="table-img">
-                              <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
-                              <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><p class="link-name">Blurax</p></td>
-                            <td><a href='#'>https://www.blurax.com</a></td>
+                        </tr>
+                        <tr>
+                            <td><p class="link-name">Currently offer</p></td>
+                            <td><a href='#'>https://www.currently.com</a></td>
                             <td  class="table-img">
                               <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
                               <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
                             </td>
                         </tr>
                         <tr>
-                          <td><p class="link-name">Piece of Wine</p></td>
-                          <td><a href='#'>https://www.pieceofwine.com</a></td>
+                            <td><p class="link-name">Blurpix</p></td>
+                            <td><a href='#'>https://www.blurpix.com</a></td>
+                            <td  class="table-img">
+                              <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
+                              <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td><p class="link-name">Your Site</p></td>
+                          <td><a href='#'>https://wwwjj.yoursite.com</a></td>
                           <td  class="table-img">
                             <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
                             <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
                           </td>
-                        </tr>
-                        <tr>
-                        <td><p class="link-name">Twitter</p></td>
-                        <td><a href='#'>https://www.twitter.com</a></td>
+                      </tr>
+                      <tr>
+                        <td><p class="link-name">Google</p></td>
+                        <td><a href='#'>https://www.google.com</a></td>
                         <td  class="table-img">
                           <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
-                          <a><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                          <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
                         </td>
-                        </tr>
-                      </table>
-                    </div>
-                    <div class="btn-addnew">
-                        <button  class="btn">+ add new</button>
-                    </div>
+                      </tr>
+                      <tr>
+                        <td><p class="link-name">Facebook</p></td>
+                        <td><a href='#'>https://www.facebook.com</a></td>
+                        <td  class="table-img">
+                          <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
+                          <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><p class="link-name">Dashboard</p></td>
+                        <td><a href='#'>https://www.dashboard.com</a></td>
+                        <td  class="table-img">
+                          <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
+                          <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><p class="link-name">Blurax</p></td>
+                        <td><a href='#'>https://www.blurax.com</a></td>
+                        <td  class="table-img">
+                          <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
+                          <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td><p class="link-name">Piece of Wine</p></td>
+                      <td><a href='#'>https://www.pieceofwine.com</a></td>
+                      <td  class="table-img">
+                        <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
+                        <a href="#"><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                      </td>
+                    </tr>
+                    <tr>
+                    <td><p class="link-name">Twitter</p></td>
+                    <td><a href='#'>https://www.twitter.com</a></td>
+                    <td  class="table-img">
+                      <a href="#"><img src="vendor/icons/links.svg" class="icon-link" alt=""></a>
+                      <a><img src="vendor/icons/trash.svg" class="icon-link" alt=""></a>
+                    </td>
+                    </tr>
+                  </table>
                 </div>
+                <div class="btn-addnew">
+                    <button  class="btn">+ add new</button>
+                </div>
+              </div>
             </div>
         </div>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="./js/script.js"></script>
+
 </body>
 </html>
