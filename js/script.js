@@ -12,9 +12,13 @@ function menuClickHandler(event) {
   event.preventDefault();
   const clickedElement = this;
   console.log('Button was cliked!', clickedElement);
-  const activeMenu = document.querySelector('.menu');
+  const activeMenu = document.querySelector('.aside');
+  //const pageContent = document.querySelector('.main-page-content');
   console.log('Menu: ', activeMenu);
+  //console.log('Page content', pageContent);
   activeMenu.classList.toggle('active');
+  //pageContent.classList.toggle('col-9');
+  //pageContent.classList.toggle('col-12');
   console.log('Menu: ', activeMenu);
 }
 
