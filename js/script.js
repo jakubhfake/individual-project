@@ -12,7 +12,7 @@ function menuClickHandler(event) {
   event.preventDefault();
   const clickedElement = this;
   console.log('Button was cliked!', clickedElement);
-  const activeMenu = document.querySelector('.aside');
+  const activeMenu = document.querySelector('.menu');
   //const pageContent = document.querySelector('.main-page-content');
   console.log('Menu: ', activeMenu);
   //console.log('Page content', pageContent);

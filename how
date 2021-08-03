@@ -1,0 +1,59 @@
+[33mcommit 6b79645b7897f3ec4f65adb653bb50ea9e193ed2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Jakub Haliniak <jakubh.fake@gmail.com>
+Date:   Thu Jul 29 17:15:12 2021 +0200
+
+    working on RWD
+
+[33mcommit 557d9f27cea480121ab8b4a86e537cc4da5b98c4[m
+Author: Jakub Haliniak <jakubh.fake@gmail.com>
+Date:   Thu Jul 22 20:04:16 2021 +0200
+
+    Working on web RWD
+
+[33mcommit dc7b09ef88cec3af569a4666b449e3da5505c74a[m
+Author: Jakub Haliniak <jakubh.fake@gmail.com>
+Date:   Sun Jul 18 10:23:34 2021 +0200
+
+    End working at Links section
+
+[33mcommit 122a77a76822763d3bd2768836232bb67e5d2e33[m
+Author: Jakub Haliniak <jakubh.fake@gmail.com>
+Date:   Sun Jul 18 10:14:31 2021 +0200
+
+    End working at Links section
+
+[33mcommit 03125913cdc3e8b7bc0f1693e36eb0365dff3a0c[m
+Author: Jakub Haliniak <jakubh.fake@gmail.com>
+Date:   Fri Jul 16 12:06:42 2021 +0200
+
+    Add Links section HTML and SCSS
+
+[33mcommit ef294e631917ea3e1a9815dcfdecb16aca823848[m
+Author: Jakub Haliniak <jakubh.fake@gmail.com>
+Date:   Wed Jul 14 08:24:14 2021 +0200
+
+    Start working on htmp and scss sketch project
+
+[33mcommit 3f757d864c83fa23dcdb7365312009c8eea64e4a[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Jakub Haliniak <jakubh.fake@gmail.com>
+Date:   Thu Jun 24 09:33:00 2021 +0200
+
+    Basic settings for project
+
+[33mcommit 6796dab7f49077251709e49e1dc3c7f4484f3640[m
+Author: Jakub Haliniak <jakubh.fake@gmail.com>
+Date:   Thu Jun 24 09:32:02 2021 +0200
+
+    Basic settings for project
+
+[33mcommit ff96db3fffc3b2e14e95e950d250117e317d2f95[m
+Author: Jakub Haliniak <jakubh.fake@gmail.com>
+Date:   Wed Jun 23 10:16:49 2021 +0200
+
+    Init project
+
+[33mcommit 6734113463e79f4bcc55979a98588a97efd4ddcd[m
+Author: jakubhfake <80764400+jakubhfake@users.noreply.github.com>
+Date:   Wed Jun 23 06:29:19 2021 +0200
+
+    Initial commit

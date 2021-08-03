@@ -1,7 +1,7 @@
 .aside {
   position: relative;
   //max-width: 100%/12*2;
-  border: solid red;
+  //border: solid red;
   background-color: $color-main-black;
   padding: 0px;
 }
@@ -14,17 +14,18 @@
   height: 100%;
   color: $color-main-grey;
   list-style: none;
-  .active {
-    display: inline-block;
-    width: 100%;
-  }
+  
 }
 
-.aside-nav ul {
+.menu {
   display: none;
   list-style: none;
   padding-left: 0px;
   li {
+    //box-sizing: border-box;
+    border-left-style: solid;
+    border-color: $color-main-black;
+    border-width: 4px;
     margin-bottom: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -39,51 +40,99 @@
   img {
     vertical-align: text-bottom;
   }
-}
-.nav-link-active {
-  border-left-style: solid;
-  border-width: 4px;
-  border-color: $color-nav-active1;
-  background-color: $color-nav-active2;
-  a {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7487%)
-      hue-rotate(151deg) brightness(108%) contrast(103%);
+  .nav-link-active {
+    border-color: $color-nav-active1;
+    background-color: $color-nav-active2;
+    a {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7487%)
+        hue-rotate(151deg) brightness(108%) contrast(103%);
+    }
   }
 }
+
+.active {
+  display: inline-block;
+  width: 100%;
+}
+
+  .mobile-topmenu {
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    //background-color: $color-white;
+    //border: 2px solid orange;
+    border-bottom: 1px solid $color-main-grey;
+  
+    ul {
+      list-style: none;
+      margin: 0;
+      border: 2px solid blueviolet;
+      padding-inline-start: 0;
+    }
+    li {
+      position: relative;
+      display: block;
+      font-size: 15px;
+      padding: 5px 0;
+      border-bottom: 1px solid;
+      border-color: $color-main-grey;
+  
+      a {
+        display: inline;
+        vertical-align: top;
+      }
+      span {
+        margin: 0 10px 0 10px;
+        vertical-align: middle;
+      }
+      div {
+        position: relative;
+      }
+      img {
+        margin: 2px 0 0 2px;
+      }
+      .amount {
+        font-size: 15px;
+        font-weight: 500;
+        color: $color-main-grey;
+      }
+      .login-person {
+        color: $color-link;
+        font-size: 10px;
+      }
+    }
+    .notification {
+      position: absolute;
+      top: 4px;
+      left: 14px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .active {
+      background-color: $color-nav-active1;
+    }
+  }
+
+@media (max-width: 576px)  {
+  .menu li {
+      margin-bottom: 0px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      a {
+        font-size: 12px;
+      }
+    }
 
 .mobile-topmenu {
-  position: fixed;
-  //width: 100%/12 * 2;
-  height: 100px;
-  //background-color: $color-white;
-  border: 2px solid red;
-  //border-bottom: 1px solid $color-main-grey;
-
-  ul {
-    display: inline;
-    list-style: none;
-    margin: 0;
-    height: 100%;
-  }
   li {
-    display: block;
-    font-size: 20px;
-    padding: 20px 0;
-    border-top: 1px solid;
-    border-color: $color-main-grey;
-
-    a {
-      display: inline;
-      vertical-align: top;
-    }
-    span {
+    font-size: 15px;
+    padding: 5px 0;
+  span {
       margin: 0 10px 0 10px;
-      vertical-align: middle;
     }
-    div {
-      position: relative;
-    }
-    img {
+  img {
       margin: 2px 0 0 2px;
     }
     .amount {
@@ -93,25 +142,24 @@
     }
     .login-person {
       color: $color-link;
-      font-size: 12px;
+      font-size: 10px;
     }
   }
   .notification {
-    position: absolute;
-    top: -2px;
-    left: 26px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    z-index: 1;
+    top: 4px;
+    left: 12px;
+    width: 7px;
+    height: 7px;
   }
   .active {
     background-color: $color-nav-active1;
   }
 }
+}
 
-@media (max-width: 768px) {
-  .aside-nav ul li {
-    margin: 2px 0 2px 0;
+@media (min-width: 577px) {
+  // to będę musiał zmienić !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  .mobile-topmenu {
+    display: none;
   }
 }
